@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1032092787216",
+    "project_id": "aovshoes-eb654",
+    "storage_bucket": "aovshoes-eb654.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032092787216:android:8b505fcd15f3a996416095",
+        "android_client_info": {
+          "package_name": "com.aov.aovshoes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWE6yKvBRN2moWprDuUykDqwM2ke2wxjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,38 +1,50 @@
-<p align="center">
-  <img alt="Rocketseat Education" src="https://avatars.githubusercontent.com/u/69590972?s=200&v=4" width="100px" />
-</p>
+# Projeto Push Notification com Expo Bare Workflow
 
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=Rocketseat&message=Education&color=8257e5&labelColor=202024" alt="Rocketseat Project" />
-  <a href="LICENSE"><img  src="https://img.shields.io/static/v1?label=License&message=MIT&color=8257e5&labelColor=202024" alt="License"></a>
-</p>
+Este projeto é uma aplicação Expo Bare Workflow que implementa o uso do Firebase Cloud Messaging (FCM) para notificações push e notificações locais com agendamento. Com esse projeto, você poderá enviar notificações para dispositivos móveis Android e iOS de forma remota utilizando o FCM, bem como agendar notificações locais para serem exibidas em momentos específicos.
 
+## Pré-requisitos
 
-## 💻 Projeto
+Certifique-se de ter o Node.js instalado em sua máquina. Você também precisará do Expo CLI para rodar o projeto localmente. Além disso, é necessário ter uma conta no Firebase Console para configurar o Firebase Cloud Messaging.
 
-igniteshoesapp
+## Configuração
 
-## 📝 Licença
+1. **Clone o repositório:**
+    ```
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+2. **Navegue até o diretório do projeto:**
+    ```
+    cd nome-do-repositorio
+    ```
 
----
+3. **Instale as dependências do projeto:**
+    ```
+    npm install
+    ```
 
-<p align="center">
-  Feito com 💜 by Rocketseat
-</p>
+4. **Configure o Firebase:**
+   - Crie um novo projeto no [Firebase Console](https://console.firebase.google.com/).
+   - Adicione um aplicativo iOS e/ou Android ao seu projeto Firebase, seguindo as instruções fornecidas.
+   - Baixe o arquivo `google-services.json` (para Android) e/ou `GoogleService-Info.plist` (para iOS) e coloque-os na pasta `./android/app` (para Android) e/ou `./ios` (para iOS) do seu projeto.
+   - Copie o Sender ID do seu projeto Firebase.
+   - Cole o Sender ID no arquivo `./src/config/firebaseConfig.js`.
 
+5. **Execute o projeto:**
 
-<!--START_SECTION:footer-->
+   - Para iOS:
+        ```
+        npx pod-install
+        npx react-native run-ios
+        ```
 
-<br />
-<br />
+   - Para Android:
+        ```
+        npx react-native run-android
+        ```
 
-<p align="center">
-  <a href="https://discord.gg/rocketseat" target="_blank">
-    <img align="center" src="https://storage.googleapis.com/golden-wind/comunidade/rodape.svg" alt="banner"/>
-  </a>
-</p>
+   Isso iniciará o aplicativo em um emulador ou dispositivo físico.
 
-<!--END_SECTION:footer-->
+## Licença
 
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
